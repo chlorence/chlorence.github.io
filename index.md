@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="robots" content="noindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,500;1,600&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+       <style>
+            * {box-sizing: border-box;}
+            .row {display: flex;}
+                /* Create two equal columns that sits next to each other */
+            .column {flex: 50%; margin-left:10%; /* Should be removed. Only for demonstration */}
+
+        /** Styling **/
+            body {background-color:#F2F2F2; padding:100px;}
+            .heading img {width:60px;}
+            p {font-family: 'Jost', sans-serif; font-weight:300; font-size:18px;color:#888888;}
+            h1 {font-family: 'Jost', sans-serif; font-weight:600; font-size:32pt;color:#B79C6E;}
+            h2 {font-family: 'Jost', sans-serif; font-weight:600; font-size:18pt; color:#444444; margin-bottom:5px;}
+            a {font-family: 'Jost', sans-serif; font-weight:300; font-size:18px; color:#888888;text-decoration: none;}
+        </style>
+
+    </head>
+<body>
+
+
+
+    <div class="row">
+        <div class="column">
+            <div class="heading">
+            <img style="margin-bottom:10px;" src="img/logo.png"></img>
+        </div>
+            <p style="font-size: 18px;"><span id='date-time'></span>.</p>
+            <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23f2f2f2&ctz=Europe%2FParis&showDate=1&showPrint=0&showTabs=1&showTitle=0&mode=WEEK&src=Y2FscGVydEBoeWRyYS5tYw&src=Y2hsb2VAY2hsb2VhbHBlcnQuY29t&color=%23616161&color=%234285F4" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        
+        <div class="column">
+            <div>
+                <h1 style="margin-bottom:40px;">Company Links</h1>
+                <div style="margin-bottom:40px;">
+                    <h2>Company Drive</h2>
+                    <a href="https://hydramc-my.sharepoint.com/">One Drive</a>
+                </div>
+                <div style="margin-bottom:40px;">
+                    <h2>Product Management</h2>
+                    <a href="https://airtable.com/appLCM13cWSyyNjQD/tbl13iCuUUw2XL4ik/viwdfeNhdS4VXZkvC">Ltech Product Roadmap on Airtable</a><br>
+                    <a href="https://www.pivotaltracker.com/n/projects/2533749">Hydra Design Board on Pivotal</a><br>
+                    <a href="https://www.pivotaltracker.com/n/projects/2533747">Ltech Engineering Board on Pivotal</a><br>
+                </div>
+                <div style="margin-bottom:40px;">
+                    <h2>Corporate Resources</h2>
+                    <a href="https://hydramc.sharepoint.com/:f:/s/Hydra/ElSVDhsdjKRAsnzJnDr_GWcBd0Zm5o7ViDpGVrjL9Rc40g?e=SoghM4">Corporate Brand Guidelines</a>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+    
+    <script>
+        var dt = new Date();
+        document.getElementById('date-time').innerHTML=dt;
+    </script>
+        
+
+   
+    
+  
+
+    </body>
+</html> 
